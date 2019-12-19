@@ -1,9 +1,50 @@
-body {
-    background-color: lightgreen;
+* {
+    box-sizing: border-box;
 }
 
-@media screen and (max-width: 350px){
-    body {
-        background-color: lightblue;
+.container {
+    display: flex;
+    flex-flow: column;
+    background-color: #ebebeb;
+    align-items: center;
+}
+
+.header {
+    color: #333333;
+    padding: 10px;
+    width: 96%;
+    text-align: center;
+    border-bottom: 5px solid;
+}
+
+.main {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+}
+
+.section1 h2,
+.section2 h2 {
+    text-align: center;
+    border-bottom: 2px solid;
+}
+
+.section1,
+.section2 {
+    flex: 1;
+    flex-wrap: wrap;
+    text-align: justify;
+    padding: 10px;
+    color: #4e4e4e;
+}
+
+@media screen and (max-width: 500px) {
+    .main {
+        flex-flow: column;
     }
 }
